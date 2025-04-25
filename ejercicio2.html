@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio #2</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .nav i {
+            font-size: 30px;
+        }
+        
+        .image {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .image img {
+            margin: 10px;
+            width: 500px;
+            border-radius: 10px;
+        }
+        .name {
+            width: 100%;
+            margin-left: 10px;
+        }
+        .name p {
+            margin-top: 5px;
+            font-size: 14px;
+            color: lightgrey;
+        }
+        .rate {
+            display: flex;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+        .rate h5 {
+            font-size: 20px;
+            margin-left: 4px;
+        }
+        .rate p {
+            font-size: 13px;
+            color: lightgrey;
+            margin-right: 270px;
+        }
+
+        .rate i {
+            color: orange;
+            font-size: 20px;
+        }
+
+        #last-icon {
+            margin-left: 10px;
+        }
+
+        .description {
+            margin-top: 10px;
+            text-align: justify;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .description h4 {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        .description span {
+            color: orange;
+        }
+
+        .size-tittle {
+            margin-left: 10px;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .sizes {
+            display: flex;
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        .sizes input {
+            text-align: center;
+            width: 80px;
+            height: 40px;
+            margin-left: 30px;
+            border-radius: 10px;
+            border: 1px solid;
+            border-color: lightgrey;
+        }
+
+        .price {
+            display: flex;
+            margin-left: 10px;
+            margin-top: 20px;
+        }
+        
+        .price h5 {
+            font-size: 15px;
+            margin-top: 15px;
+        }
+
+        .price span {
+            font-size: 20px;
+            color: orange;
+        }
+
+        .button {
+            margin-left: 80px;
+        }
+
+        .button button {
+            width: 200px;
+            height: 60px;
+            background-color: orange;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="nav">
+                <i class='bx bx-chevron-left'></i>
+                <h1>Detail</h1>
+                <i class='bx bx-heart'></i>
+            </div>
+            <div class="image">
+                <img src="./Images/Cappucino.png" alt="">
+            </div>
+            <div class="name">
+                <h2>Cappucino</h2>
+                <p>With Chocolatte</p>
+            </div>
+        </div>
+        <div class="rate">
+            <i class='bx bxs-star'></i>
+            <h5>4.9</h5>
+            <p>(230)</p>
+            <div class="last-icons">
+            <i class='bx bxs-leaf'></i>
+            <i class='bx bxs-objects-vertical-bottom' id="last-icon"></i>
+            </div> 
+        </div>
+        <div class="description">
+            <h4>Description</h4>
+            <p>A cappucino is an approximately 150ml (5 oz) beverage, with 25 ml of espresso coffe and 85 ml of fresh milk the to. <span>Read More...</span></p>
+        </div>
+        <div class="size-tittle">
+            <h4>Size</h4>
+        </div>
+        <div class="sizes">
+            <input type="text" placeholder="S" readonly>
+            <input type="text" placeholder="M" readonly>
+            <input type="text" placeholder="L" readonly>
+        </div>
+        <div class="price">
+            <h5>Price<br><span>$4.53</span></h5>
+            <div class="button">
+                <button>Buy Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
